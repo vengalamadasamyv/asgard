@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Outfit", sans-serif !important;
+}
+
+/* navbar */
+
+.navbar-toggler{
+    outline: none !important;
+    border: none !important;
+}
+
+/* testimonial */
+.testimonial{
+    padding: 10px 30px;
+    
+}
+
+
+/* home section */
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(220, 220, 220, 0.723); */
+    margin-bottom: 3rem;
+    min-height: 95vh;
+    background-image: url("/assets/images/homebg1.png");
+    background-color:floralwhite;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+}
+
+.home-sub{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+}
+
+.home-one{
+    flex-basis: 60%;
+    padding-top: 30px;
+}
+
+.home-two{
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.home-two img{
+    width: 400px;
+}
+
+.home-heading{
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.home-des{
+    font-size: 18px;
+}
+
+.points{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.pint-sub{
+    background-color: white;
+    border: 1px dashed #0D6EFD;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .home-sub{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .home-one{
+        flex-basis: unset;
+        text-align: center;
+    }
+
+    .home-two{
+        flex-basis: unset;
+    }
+
+    .home-heading{
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .home-des{
+        font-size: 15px;
+    }
+
+    .home-two img{
+        width: 100%;
+    }
+    .points{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-but{
+        font-size: 14px !important;
+    }
+
+    .about-but{
+        padding: 3px 30px;
+        font-size: 18px;
+        margin-top: 30px !important;
+    }
+}
+
+/* benefits  */
+.benefits{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.bene-name{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.benefits-sub{
+    width: 80%;
+    display: flex;
+}
+
+.benefits-sub img{
+    width: 300px;
+}
+
+.bene-content{
+ flex-basis: 70%;
+}
+
+.bene-image{
+    flex-basis: 30%;
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .bene-content{
+        flex-basis:100%;
+    }
+    .bene-image{
+        flex-basis:100%;
+        text-align: center;
+    }
+    .benefits-sub{
+        flex-direction: column;
+    }
+}
+
+
+/* model */
+
+.elite{
+    width: 100%;
+}
+.elite-sub{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.model{
+    border-radius: 9px;
+    width: 300px;
+    height: 340px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+}
+
+.model-name{
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.model-name p{
+    margin-bottom: 0;
+}
+
+.model-name button{
+    background-color: green;
+    width: 36px;
+    height: 36px;
+    border: none;
+    color: white;
+    border-radius: 50%;
+}
+
+.model1{
+    background-image: url("/assets/images/model1.webp");
+}
+
+.model2{
+    background-image: url("/assets/images/model2.webp");
+}
+
+.model3{
+    background-image: url("/assets/images/model3.webp");
+}
+
+.model4{
+    background-image: url("/assets/images/model4.webp");
+}
+
+.model5{
+    background-image: url("/assets/images/model5.webp");
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .elite{
+        overflow-x: scroll;
+    }
+
+    .mb{
+        margin-bottom: 20px;
+    }
+}
+
+
+.about-but{
+    background-color: green;
+    padding: 0 20px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.home-but{
+    background-color:#0D6EFD;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 600;
+    /* margin-top: 10px; */
+}
+
+/* slide */
+
+.elite {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.elite::before,
+.elite::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.model {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 250px;
+  margin: 0 10px;
+  /* background: #222; */
+  /* color: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scroll-left 20s linear infinite;
+}
+
+.elite:hover .model {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/* family */
+
+.family{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.family-sub{
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.family-one, .family-two, .family-three{
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.family-count{
+    font-size: 30px;
+    font-weight: 800;
+    color: green;
+    margin-bottom: 0;
+}
+
+.family-detail{
+    font-size: 18px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .family-count{
+        font-size: 24px;
+    }
+
+    .family-detail{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+
+/* Duplicate card set for smooth infinite loop */
+.elite {
+  display: flex;
+  gap: 20px;
+  animation: none;
+}
+
+.elite-sub {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.elite:hover .elite-sub {
+  animation-play-state: paused;
+}
+
+
+
+
+/* quote */
+.quote{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.quote-sub{
+    width: 80%;
+    background-color: #32ab3a;
+    border-radius: 9px;
+    text-align: center;
+    padding: 20px;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.quote-button{
+    background-color:white;
+    padding: 2px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 3px 4px rgb(1, 1, 1);
+}
